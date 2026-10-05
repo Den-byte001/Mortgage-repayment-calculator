@@ -24,8 +24,12 @@ body {
 .secondSection {
   width: 50%;
   padding: 40px;
-  background-color: yellow;
+  background-color: hsl(202, 55%, 16%);
   box-sizing: border-box;
+  border-radius: 0 0 0 90px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  align-content: center;
 }
 
 h2,
@@ -137,4 +141,8 @@ button {
   font-weight: 600;
   border-radius: 50px;
   margin-top: 50px;
+}
+p {
+  color: hsl(203, 41%, 72%);
+  font-size: 18px;
 }
