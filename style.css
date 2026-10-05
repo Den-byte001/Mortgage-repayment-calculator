@@ -6,3 +6,135 @@ body {
   height: 100vh;
   align-items: center;
 }
+
+.genCard {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  width: 60%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.firstSection {
+  width: 50%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.secondSection {
+  width: 50%;
+  padding: 40px;
+  background-color: yellow;
+  box-sizing: border-box;
+}
+
+h2,
+h3 {
+  margin: 0;
+}
+
+h3 {
+  text-decoration: underline;
+  font-weight: 600;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.amountInput {
+  margin-top: 20px;
+}
+
+.inputDiv {
+  border: 1px solid hsl(200, 24%, 40%);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  margin: 15px 0;
+}
+.inputDiv span {
+  font-size: 30px;
+  padding: 0 10px;
+  background-color: hsl(202, 86%, 94%);
+}
+
+.inputDiv input {
+  /* margin: 0; */
+  width: 100%;
+  border: none;
+  font-size: 25px;
+}
+.termRate {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.termDiv {
+  display: flex;
+  width: 90%;
+  border: 1px solid hsl(200, 24%, 40%);
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 10px 0 20px 0;
+}
+
+.termDiv input {
+  border: none;
+  font-size: 25px;
+  width: 70%;
+  height: 35px;
+}
+
+.termDiv span,
+.interestDiv span {
+  font-size: 20px;
+  padding: 5px 10px;
+  background-color: hsl(202, 86%, 94%);
+  font-weight: bold;
+}
+
+.interestDiv {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid hsl(200, 24%, 40%);
+  overflow: hidden;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.interestDiv input {
+  border: none;
+  font-size: 25px;
+  width: 90%;
+  height: 35px;
+}
+
+.repaymentDiv,
+.interestOnlyDiv {
+  border: 1px solid hsl(200, 24%, 40%);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px 0;
+}
+.repaymentDiv {
+  margin-top: 20px;
+}
+button {
+  border: none;
+  background-color: hsl(61, 70%, 52%);
+  display: flex;
+  align-items: center;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  margin-top: 50px;
+}

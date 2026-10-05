@@ -21,41 +21,52 @@
     <title>Frontend Mentor | Mortgage repayment calculator</title>
   </head>
   <body>
-    <section>
-      <section>
-        <div>
-          <h3>Mortgage Calculator</h3>
-          <h5>Clear All</h5>
+    <section class="genCard">
+      <section class="firstSection">
+        <div class="header">
+          <h2>Mortgage Calculator</h2>
+          <h3>Clear All</h3>
         </div>
         <form action="">
-          <div>
+          <div class="amountInput">
             <label for="amount">Mortgage Amount</label>
-            <input type="text" name="amount" id="amount" />
+            <div class="inputDiv">
+              <span>&#8358;</span>
+              <input type="number" name="amount" id="amount" />
+            </div>
           </div>
-          <div>
-            <label for="term">Mortgage Term</label>
-            <input type="text" name="term" id="term" />
+          <div class="termRate">
+            <div>
+              <label for="term">Mortgage Term</label>
+              <div class="termDiv">
+                <input type="number" name="term" id="term" />
+                <span>years</span>
+              </div>
+            </div>
+            <div>
+              <label for="interest">Interest Rate</label>
+              <div class="interestDiv">
+                <input type="number" name="interest" id="interest" />
+                <span>%</span>
+              </div>
+            </div>
           </div>
-          <div>
-            <label for="interest">Interest Rate</label>
-            <input type="text" name="interest" id="interest" />
-          </div>
-          <label for="mortgageType">Mortgage Type</label>
-          <div>
+          <label for="mortgageType" class="mortgageType">Mortgage Type</label>
+          <div class="repaymentDiv">
             <input type="radio" name="type" id="" />
             <label for="repaymentOnly">Repayment</label>
           </div>
-          <div>
+          <div class="interestOnlyDiv">
             <input type="radio" name="type" id="" />
             <label for="interestOnly">Interest Only</label>
           </div>
         </form>
         <button type="submit">
-          <img src="./assets/images/icon-calculator.svg" alt="" />Calculate
-          Repayments
+          <img src="./assets/images/icon-calculator.svg" alt="" />
+          <div>Calculate Repayments</div>
         </button>
       </section>
-      <section>
+      <section class="secondSection">
         <img
           src="./assets/images/illustration-empty.svg"
           alt="Calculator images"

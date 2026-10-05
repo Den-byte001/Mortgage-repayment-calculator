@@ -59,3 +59,104 @@
   </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .amountInput input {
+  display: block;
+  width: 100%;
+} */
+
+input {
+  background-color: transparent;
+  /* border: 1px solid black; */
+  border: none;
+  /* border-radius: 5px; */
+  height: 34px;
+  font-size: 20px;
+  /* margin: 10px 0; */
+  /* width: 100%; */
+}
+/* .inputDiv {
+  position: relative;
+  overflow: hidden;
+}
+.currency {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: blue;
+  font-size: 20px;
+  padding: 10px;
+  
+} */
+
+.inputDiv {
+  display: flex;
+  align-items: center;
+  border: 1px solid hsl(200, 24%, 40%);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.inputDiv span {
+  font-size: 30px;
+  padding: 0 10px;
+  /* background-color: hsl(203, 41%, 72%); */
+  background-color: hsl(202, 86%, 94%);
+}
+
+.termRate {
+  display: flex;
+  margin-top: 20px;
+  width: 80%;
+}
+
+/* .termDiv { */
+/* display: flex;
+  align-items: center;
+  border: 1px solid hsl(200, 24%, 40%);
+  border-radius: 6px; */
+/* overflow: hidden; */
+/* margin-top: 10px; */
+/* width: 100%; */
+/* } */
+
+/* .inputDiv span { */
+/* font-size: 30px;
+  padding: 0 10px; */
+/* background-color: hsl(203, 41%, 72%); */
+/* background-color: hsl(202, 86%, 94%); */
+/* } */
+
+.termDiv {
+  display: flex;
+  /* width: 100%; */
+  border: 1px solid hsl(200, 24%, 40%);
+}
