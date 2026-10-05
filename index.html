@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <link
       rel="icon"
       type="image/png"
@@ -22,15 +28,27 @@
           <h5>Clear All</h5>
         </div>
         <form action="">
-          <label for="amount">Mortgage Amount</label>
-          <input type="text" name="amount" id="amount" style="display: block" />
-          <label for="term">Mortgage Term</label>
-          <input type="text" name="term" id="term" />
-          <label for="interest">Interest Rate</label>
-          <input type="text" name="interest" id="interest" />
+          <div>
+            <label for="amount">Mortgage Amount</label>
+            <input type="text" name="amount" id="amount" />
+          </div>
+          <div>
+            <label for="term">Mortgage Term</label>
+            <input type="text" name="term" id="term" />
+          </div>
+          <div>
+            <label for="interest">Interest Rate</label>
+            <input type="text" name="interest" id="interest" />
+          </div>
           <label for="mortgageType">Mortgage Type</label>
-          <input type="radio" name="type" id="" /> repayment
-          <input type="radio" name="type" id="" /> Interest Only
+          <div>
+            <input type="radio" name="type" id="" />
+            <label for="repaymentOnly">Repayment</label>
+          </div>
+          <div>
+            <input type="radio" name="type" id="" />
+            <label for="interestOnly">Interest Only</label>
+          </div>
         </form>
         <button type="submit">
           <img src="./assets/images/icon-calculator.svg" alt="" />Calculate
