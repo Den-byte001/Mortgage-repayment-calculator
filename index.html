@@ -32,34 +32,50 @@
             <label for="amount">Mortgage Amount</label>
             <div class="inputDiv">
               <span>&#8358;</span>
-              <input type="number" name="amount" id="amount" />
+              <input
+                type="number"
+                name="amount"
+                id="amount"
+                placeholder="0.00"
+              />
             </div>
+            <div id="amountError">tyhjkl</div>
           </div>
           <div class="termRate">
             <div>
               <label for="term">Mortgage Term</label>
               <div class="termDiv">
-                <input type="number" name="term" id="term" />
+                <input type="number" name="term" id="term" placeholder="0" />
                 <span>years</span>
               </div>
+              <div id="termError">tyhjkl</div>
             </div>
             <div>
               <label for="interest">Interest Rate</label>
               <div class="interestDiv">
-                <input type="number" name="interest" id="interest" />
+                <input
+                  type="number"
+                  name="interest"
+                  id="interest"
+                  placeholder="0.00"
+                />
                 <span>%</span>
               </div>
+              <div id="rateError">tyhjkl</div>
             </div>
           </div>
-          <label for="mortgageType" class="mortgageType">Mortgage Type</label>
-          <div class="repaymentDiv">
+          <div class="mortgageType">
+            <label for="mortgageType">Mortgage Type</label>
+          </div>
+          <label class="repaymentDiv">
             <input type="radio" name="type" id="" />
             <label for="repaymentOnly">Repayment</label>
-          </div>
-          <div class="interestOnlyDiv">
+          </label>
+          <label class="interestOnlyDiv">
             <input type="radio" name="type" id="" />
             <label for="interestOnly">Interest Only</label>
-          </div>
+          </label>
+          <div id="typeError">tyhjkl</div>
         </form>
         <button type="submit">
           <img src="./assets/images/icon-calculator.svg" alt="" />

@@ -40,6 +40,11 @@ h3 {
 h3 {
   text-decoration: underline;
   font-weight: 600;
+  color: hsl(200, 24%, 40%);
+}
+
+h3:hover {
+  cursor: pointer;
 }
 .header {
   display: flex;
@@ -69,7 +74,19 @@ h3 {
   /* margin: 0; */
   width: 100%;
   border: none;
+  outline: none;
   font-size: 25px;
+  cursor: pointer;
+}
+.inputDiv:focus-within {
+  border-color: hsl(61, 70%, 52%);
+}
+.inputDiv:focus-within span {
+  background-color: hsl(61, 70%, 52%);
+}
+
+input:hover {
+  cursor: pointer;
 }
 .termRate {
   display: flex;
@@ -86,22 +103,37 @@ h3 {
   overflow: hidden;
   margin: 10px 0 20px 0;
 }
-
+.termDiv:focus-within {
+  border-color: hsl(61, 70%, 52%);
+}
+.termDiv:focus-within span {
+  background-color: hsl(61, 70%, 52%);
+}
 .termDiv input {
   border: none;
+  outline: none;
   font-size: 25px;
   width: 70%;
   height: 35px;
 }
 
+.mortgageType {
+  margin-top: 10px;
+}
+
 .termDiv span,
 .interestDiv span {
   font-size: 20px;
-  padding: 5px 10px;
+  padding: 7px 10px;
   background-color: hsl(202, 86%, 94%);
   font-weight: bold;
 }
-
+.interestDiv:focus-within {
+  border-color: hsl(61, 70%, 52%);
+}
+.interestDiv:focus-within span {
+  background-color: hsl(61, 70%, 52%);
+}
 .interestDiv {
   display: flex;
   align-items: center;
@@ -114,6 +146,7 @@ h3 {
 
 .interestDiv input {
   border: none;
+  outline: none;
   font-size: 25px;
   width: 90%;
   height: 35px;
@@ -127,10 +160,21 @@ h3 {
   font-size: 20px;
   padding: 10px;
   margin: 10px 0;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  cursor: pointer;
 }
 .repaymentDiv {
   margin-top: 20px;
 }
+
+.repaymentDiv:has(input:checked),
+.interestOnlyDiv:has(input:checked) {
+  background-color: hsl(61, 71%, 80%);
+  border-color: hsl(61, 94%, 31%);
+}
+
 button {
   border: none;
   background-color: hsl(61, 70%, 52%);
@@ -141,8 +185,29 @@ button {
   font-weight: 600;
   border-radius: 50px;
   margin-top: 50px;
+  cursor: pointer;
 }
+
+button:hover {
+  filter: brightness(90%);
+}
+
 p {
   color: hsl(203, 41%, 72%);
   font-size: 18px;
+}
+
+input[type="radio"] {
+  accent-color: gold;
+  /* outline: none; */
+  /* block-size: 20px; */
+  /* inline-size: 20px; */
+  width: 18px;
+  height: 18px;
+  /* cursor: pointer; */
+  outline: none;
+}
+
+input[type="radio"]:focus {
+  outline: none;
 }
