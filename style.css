@@ -22,6 +22,7 @@ body {
 }
 
 .secondSection {
+  display: flex;
   width: 50%;
   padding: 40px;
   background-color: hsl(202, 55%, 16%);
@@ -29,7 +30,7 @@ body {
   border-radius: 0 0 0 90px;
   text-align: center;
   color: hsl(0, 0%, 100%);
-  align-content: center;
+  /* align-content: center; */
 }
 
 h2,
@@ -210,4 +211,32 @@ input[type="radio"] {
 
 input[type="radio"]:focus {
   outline: none;
+}
+
+.resultContainer {
+  text-align: start;
+  display: none;
+}
+.primaryContainer {
+  align-self: center;
+}
+
+.amountCard {
+  background-color: hsl(201, 76%, 10%);
+  border-top: 5px solid hsl(61, 70%, 52%);
+  border-radius: 8px;
+  padding: 20px 20px 40px 20px;
+  margin-top: 30px;
+}
+.amountCard p {
+  font-size: 16px;
+}
+.h2Result {
+  font-size: 60px;
+  color: hsl(61, 70%, 52%);
+  border-bottom: 2px solid hsl(205, 14%, 34%);
+  padding-bottom: 30px;
+}
+.totalP {
+  margin-top: 30px;
 }

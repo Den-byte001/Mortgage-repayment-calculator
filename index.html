@@ -77,23 +77,43 @@
           </label>
           <div id="typeError"></div>
         </form>
-        <button type="submit">
+        <button type="submit" id="calculate" onclick="calculate()">
           <img src="./assets/images/icon-calculator.svg" alt="" />
           <div>Calculate Repayments</div>
         </button>
       </section>
       <section class="secondSection">
-        <img
-          src="./assets/images/illustration-empty.svg"
-          alt="Calculator images"
-        />
-        <h2>Results shown here</h2>
-        <p>
-          Complete the form and click “calculate repayments” to see what your
-          monthly repayments would be.
-        </p>
+        <div class="primaryContainer">
+          <img
+            src="./assets/images/illustration-empty.svg"
+            alt="Calculator images"
+            class=""
+          />
+          <h2 class="">Results shown here</h2>
+          <p class="">
+            Complete the form and click “calculate repayments” to see what your
+            monthly repayments would be.
+          </p>
+        </div>
+
+        <div class="resultContainer">
+          <h2 class="">Your results</h2>
+          <p class="">
+            Your results are shown below based on the information you provided.
+            To adjust the results, edit the form and click "calculate
+            repayments" again.
+          </p>
+
+          <div class="amountCard">
+            <p class="">Your monthly repayments</p>
+            <h2 class="h2Result">$1,797.74</h2>
+            <p class="totalP">Total you'll repay pver the term</p>
+            <h2 class="overallRepay">$539,322.94</h2>
+          </div>
+        </div>
       </section>
     </section>
+    <p id="para"></p>
     <script src="./script.js"></script>
   </body>
 </html>
