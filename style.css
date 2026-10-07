@@ -232,7 +232,7 @@ input[type="radio"]:focus {
   font-size: 16px;
 }
 .h2Result {
-  font-size: 60px;
+  font-size: 50px;
   color: hsl(61, 70%, 52%);
   border-bottom: 2px solid hsl(205, 14%, 34%);
   padding-bottom: 30px;

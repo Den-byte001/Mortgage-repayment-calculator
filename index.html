@@ -25,7 +25,7 @@
       <section class="firstSection">
         <div class="header">
           <h2>Mortgage Calculator</h2>
-          <h3>Clear All</h3>
+          <h3 class="clear" onclick="clearAll()">Clear All</h3>
         </div>
         <form action="">
           <div class="amountInput">
@@ -68,11 +68,11 @@
             <label for="mortgageType">Mortgage Type</label>
           </div>
           <label class="repaymentDiv">
-            <input type="radio" name="type" id="" />
+            <input type="radio" name="type" id="repaymentOnly" />
             <label for="repaymentOnly">Repayment</label>
           </label>
           <label class="interestOnlyDiv">
-            <input type="radio" name="type" id="" />
+            <input type="radio" name="type" id="interestOnly" />
             <label for="interestOnly">Interest Only</label>
           </label>
           <div id="typeError"></div>
@@ -106,9 +106,9 @@
 
           <div class="amountCard">
             <p class="">Your monthly repayments</p>
-            <h2 class="h2Result">$1,797.74</h2>
-            <p class="totalP">Total you'll repay pver the term</p>
-            <h2 class="overallRepay">$539,322.94</h2>
+            <h2 class="h2Result"></h2>
+            <p class="totalP">Total you'll repay over the term</p>
+            <h2 class="overallRepay"></h2>
           </div>
         </div>
       </section>

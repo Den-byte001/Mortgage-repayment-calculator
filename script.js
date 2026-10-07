@@ -8,6 +8,9 @@ const monthlyResult = document.querySelector(".h2Result");
 const overallRepay = document.querySelector(".overallRepay");
 const resultContainer = document.querySelector(".resultContainer");
 const primaryContainer = document.querySelector(".primaryContainer");
+const repaymentOnly = document.getElementById("repaymentOnly");
+const interestOnly = document.getElementById("interestOnly");
+
 function calculate() {
   let amountValue = Number(amount.value);
   let intValue = Number(interest.value) / 100 / 12;
@@ -22,8 +25,14 @@ function calculate() {
     ((1 + intValue) ** termValue - 1);
 
   let overTerm = repayment * termValue;
-  monthlyResult.innerHTML = repayment.toFixed(2);
-  overallRepay.innerHTML = overTerm.toFixed(2);
+  let interestValue = overTerm - amountValue;
+  if (repaymentOnly.checked) {
+    monthlyResult.innerHTML = `\u20A6 ${repayment.toFixed(2)}`;
+    overallRepay.innerHTML = `\u20A6 ${overTerm.toFixed(2)}`;
+  } else if (interestOnly.checked) {
+    monthlyResult.innerHTML = `\u20A6 ${interestValue.toFixed(2)}`;
+    overallRepay.innerHTML = `\u20A6 ${overTerm.toFixed(2)}`;
+  }
   resultContainer.style.display = "block";
   primaryContainer.style.display = "none";
 }
